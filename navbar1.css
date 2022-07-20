@@ -1,0 +1,25 @@
+/* navbar1 */
+.navbar1{
+    width: 100%;
+    height: auto;
+    background-color: rgb(229,240,218);
+}
+
+.navbar1>div{
+    color: #475D4B;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar1>div>button{
+    background-color: #475D4B;
+    color:white;
+    border: 0px;
+    border-radius:6px;
+    font-size: 12px;
+    padding: 4px 15px;
+    font-weight: bold;
+    margin-left: 15px;
+}
