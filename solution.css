@@ -1,0 +1,21 @@
+.solution {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.solution>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.solution>div>img{
+    width: 100%;
+}
+.solution>div>p{
+    border-top: 1px solid black;
+    text-align: center;
+    background-color: #E5F0DA;
+    padding: 7px 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
