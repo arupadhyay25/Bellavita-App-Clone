@@ -3,3 +3,26 @@
     font-size: 22px;
     color: #475D4B;
 }
+.bs{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: auto;
+    gap: 20px;
+}
+.bs>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bs>div>img{
+    width: 100%;
+}
+.bs>div>button{
+    width: 100%;
+    background-color: #475D4B;
+    color: #E5F0DA;
+    padding: 10px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 0px;
+}

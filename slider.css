@@ -38,9 +38,9 @@
   
   .navigation-manual{
     position: absolute;
-    width: 800px;
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
-    margin-left: 70px;
     display: flex;
     justify-content: center;
   }
@@ -76,12 +76,12 @@
   /*css for automatic navigation*/
   
   .navigation-auto{
+    width: 90%;
+    margin: auto;
     position: absolute;
     display: flex;
-    width: 800px;
     justify-content: center;
     margin-top: 310px;
-    margin-left: 70px;
   }
   
   .navigation-auto div{

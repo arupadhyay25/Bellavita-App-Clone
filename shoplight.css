@@ -1,0 +1,19 @@
+.shoplight {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.shoplight>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px px 0px;
+}
+.shoplight>div>img{
+    width: 100%;
+}
+.shoplight>div>p{
+    padding: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
