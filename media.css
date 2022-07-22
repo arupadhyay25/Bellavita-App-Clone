@@ -1,0 +1,16 @@
+.media {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+}
+.media>div{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.media>div>img{
+    width: 100%;
+    display: block;
+    transition:transform .5s;
+}

@@ -2,7 +2,7 @@ obj_bestseller=[
     {
         image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ManBox-01_700x.jpg?v=1652421642",
         image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ManBox-02_1410db0a-914d-4318-a11b-59f3e68c7cc6_360x.jpg?v=1652421646",
-        names:"Luxury Perfume Gift Set For Man",
+        names:"Luxury Perfume For Man",
         quant:"4x20ml",
         category:"Eau De Parfum",
         price:"₹649",
