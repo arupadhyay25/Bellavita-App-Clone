@@ -2,7 +2,8 @@ obj_bestseller=[
     {
         image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ManBox-01_700x.jpg?v=1652421642",
         image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ManBox-02_1410db0a-914d-4318-a11b-59f3e68c7cc6_360x.jpg?v=1652421646",
-        names:"Luxury Perfume Gift Set For Man - 4x20ml",
+        names:"Luxury Perfume Gift Set For Man",
+        quant:"4x20ml",
         category:"Eau De Parfum",
         price:"₹649",
         discount:"₹849", 
@@ -10,52 +11,51 @@ obj_bestseller=[
     {
         image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Kumkumadi-Face-Oil-01_700x.jpg?v=1652341175",
         image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiFaceOil-02_360x.jpg?v=1652341175",
-        names:"Ayurvedic Kumkumadi Face Oil, 30ml",
-        category:"Skin Brightening & Hydrating Oil For Youthful Skin",
+        names:"Ayurvedic Kumkumadi Face Oil",
+        quant:"30ml",
+        category:"Skin Brightening & Hydrating Oil",
         price:"₹649",
         discount:"₹649",
     },
     {
         image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowey-01_700x.jpg?v=1652169511",
         image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowey-02_360x.jpg?v=1652169511",
-        names:"GLOWEY 3 In 1 Face Pack, Scrub & Face Wash,100 Gm",
-        category:"Deep Cleansing, Hydrating & Skin Reviving",
+        names:"GLOWEY Scrub & Face Wash",
+        quant:"100 Gm",
+        category:"Cleansing, Hydrating & Reviving",
         price:"₹375",
         discount:"₹399",
     },
-    {
-        image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/EyeLift-01_4ac1ff22-cbb1-4b18-8b9e-11204b255113_700x.jpg?v=1652340587",
-        image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Eyelift-02_360x.jpg?v=1652340587",
-        names:"EyeLift Under Eye Cream, 20gm",
-        category:"Repairs Dark Circles, Puffy Eyes & Wrinkles",
-        price:"₹285",
-        discount:"₹325",
-    },
-    {
-        image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoLips-01_77788ac8-4061-459a-bfb5-f5b5068c1dfa_700x.jpg?v=1652340499",
-        image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/NicoLips-02_360x.jpg?v=1652340499",
-        names:"NicoLips Lip Brightening Scrub, 20gm",
-        category:"Lip Brightening, Nourishing & Repairing",
-        price:"₹399",
-        discount:"₹450",
-    },
-    {
-        image1:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-01_2_700x.jpg?v=1652340405",
-        image2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-GlowFaceWash-02_360x.jpg?v=1652340405",
-        names:"C-Glow Face Wash, 100ml",
-        category:"De-Tan & Brightening",
-        price:"₹225",
-        discount:"₹249",
-    }
 ]
 
-
-div=document.createElement("div")
-image1=document.createElement("img")
-image2=document.createElement("img")
-names=document.createElement("h2")
-category=document.createElement("p")
-price=document.createElement("p")
-discount=document.createElement("p")
-btn=document.createElement("p")
-div.append(image1,image2,names,category,price,discount,bt)
+obj_bestseller.forEach(function(elem){
+    div=document.createElement("div")
+    let image1=document.createElement("img")
+        image1.src=elem.image1
+    let names=document.createElement("p")
+        let text=elem.names.toUpperCase()
+        names.style.color="#475D4B"
+        names.style.fontSize="14px"
+        names.style.padding="3px 0px 3px 0px"
+        names.innerText=text
+    let quant=document.createElement("p")
+        let text2=elem.quant.toUpperCase()
+        quant.style.color="#475D4B"
+        quant.style.fontSize="13px"
+        quant.innerText=text2
+    let category=document.createElement("p")
+        category.style.fontSize="13px"
+        category.style.padding="3px 0px 3px 0px"
+        category.innerText=elem.category
+    let price=document.createElement("span")
+        price.innerText=elem.price
+        price.style.padding="5px 5px 15px 0px"
+    let discount=document.createElement("span")
+        discount.style.textDecoration="line-through"
+        discount.innerText=elem.discount
+    let btn=document.createElement("button")
+        btn.style.marginTop="15px"
+        btn.innerText="ADD TO CART"
+    div.append(image1,names,quant,category,price,discount,btn)
+    document.querySelector(".bs").append(div)
+})
