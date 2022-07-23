@@ -86,11 +86,11 @@
     line-height: 29px;
     font-weight: 400;
 }
-li{
+#list>li{
     display: flex;
 }
 
-li:hover{
+#list>li:hover{
     color: rgb(97, 235, 97);
 }
 #input{
