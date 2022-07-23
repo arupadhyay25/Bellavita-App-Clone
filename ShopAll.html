@@ -9,13 +9,8 @@
     <link rel="stylesheet" href="navbar1.css">
     <link rel="stylesheet" href="navbar2.css">
     <link rel="stylesheet" href="navbar3.css">
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="heading_hr_lines.css">
     <link rel="stylesheet" href="bestseller.css">
-    <link rel="stylesheet" href="shoplight.css">
-    <link rel="stylesheet" href="solution.css">
-    <link rel="stylesheet" href="lux.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="shopall.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -41,7 +36,7 @@
     </div>
     <!-- navbar3 -->
     <ul class="navbar3">
-        <li id="list"><a href="ShopAll.html">SHOP ALL</a></li>
+        <li id="list">SHOP ALL</li>
         <span id="vertical"></span>
         <li id="list">NEW ARRIVALS</li>
         <span id="vertical"></span>
@@ -61,110 +56,43 @@
     </ul>
     <!-- Horizontal line -->
     <hr>
-     <!--image slider start-->
-    <div id="slidingimg">
-        <!--image slider start-->
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200x399_580030e8-ad95-4c15-aee3-ab527ecdb5ff_1500x.png?v=1656047949" alt="1">
-          </div>
-          <div class="slide">
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200x399_1208c0c7-85d1-4569-9d7a-e613d6da9f2e_1500x.jpg?v=1655708332" alt="2">
-          </div>
-          <div class="slide">
-            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200x399_1_59ab296a-15d5-4e1c-84dd-bd35b002e4ce_1500x.png?v=1654536568" alt="3">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-          </div>
-          <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-      </div>
-      <!--image slider end--> 
-      <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 3){
-          counter = 1;
-        }
-      }, 5000);
-      </script>
+    <!-- category -->
+    <p style="font-size: 13px;font-size: 14px;color: #475D4B;margin: 10px;font-weight: 400;"> Home > Collection > #ALL PRODUCTS</p>
+    <div class="tophead">
+        <p><span class="material-symbols-outlined">sort</span>REFINE BY</p>
+        <p>181 PRODUCTS</p>
+        <p id="sortby">Sort By : <select>
+            <option>Featured</option>
+            <option>Bestseller</option>
+            <option>Alphabetically A-Z</option>
+            <option>Alphabetically Z-A</option>
+            <option>price Low-high</option>
+            <option>price high-low</option>
+            <option>date new-old</option>
+            <option>date old-new</option>
+        </select></p>
     </div>
-    <!-- simple offer image -->
-    <div class="offerimage">
-        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Flexi-Box-1200x235_2_1500x.jpg?v=1655708337" alt="">
+    <div class="shopall">
+        <div id="categorys">
+            <h1 style="text-decoration: underline;">CATEGORIES</h1>
+            <ul style="list-style-type:none;">
+                <li>Shop All</li>
+                <li>New Arrivals</li>
+                <li>Bestseller</li>
+                <li>Skin Care</li>
+                <li>Hair Care</li>
+                <li>Body Care</li>
+                <li>Perfumes</li>
+                <li>Combos</li>
+                <li>Build a Box</li>
+            </ul>
+        </div>
+        <div id="gridshop"></div>
     </div>
-    <!-- bestseller -->
-    <h1 class="hr-lines">BESTSELLERS</h1>
-    <div class="bs">
 
-    </div>
-    <!-- shoplight -->
-    <h1 class="hr-lines">IN THE SPOTLIGHT</h1>
-    <div class="shoplight">
-    
-    </div>
-    <!-- FIND SOLUTIONS FOR -->
-    <h1 class="hr-lines"">FIND SOLUTIONS FOR</h1>
-    <div class="solution">
-    
-    </div>
-    <!-- LUXURY FRAGRANCES -->
-    <h1 class="hr-lines">LUXURY FRAGRANCES</h1>
-    <div class="lux">
-    
-    </div>
-    <!-- four offer image -->
-    <div class="offerimage">
-      <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Banner3_1500x.png?v=1650368510" alt="1">
-      <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/HP_Perfume_Category_Banner_V2_1500x.png?v=1651687105" alt="12">
-      <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Banner4_1500x.png?v=1650362489" alt="3">
-      <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Desktop_Brand_Comms_Banner_V2.1_1500x.png?v=1651661695" alt="4">
-    </div>
-    <!-- embeded yt video -->
-    <iframe width="100%" height="540px" src="https://www.youtube.com/embed/65MyOTIWarA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <!-- MEDIA COVERAGE -->
-  <h1 class="hr-lines">MEDIA COVERAGE</h1>
-    <div class="media">
-    
-    </div>
-  <!-- poster Bella cash -->
-  <div class="offerimage">
-    <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Bella-Cash-Section-Desktop-v3_1500x.jpg?v=1655799639" alt="1">
-  </div>
-  <!-- Download app -->
-  <div class="download">
-    <div>
-      <img id="mobile" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Download_our_App_Section_Image_V_460x460.png?v=1650369432" alt="mobile">
-    <div>
-      <h3>Download our App</h3>
-    <img id="store" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/playstore_460x460_efa998ac-e0d8_460x460.png?v=1650369394" alt="1">
-    <img id="store2" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/app-store-card_460x460_35fc55d1_460x460.png?v=1650369409" alt="">
-    </div>
-    </div>
-  </div>
+
+
+
     <!-- contact -->
     <div class="contact">
       <div>
@@ -241,8 +169,4 @@
     </div>
 </body>
 </html>
-<script src="bestseller.js"></script>
-<script src="shoplight.js"></script>
-<script src="solution.js"></script>
-<script src="lux.js"></script>
-<script src="media.js"></script>
+<script src="shopall.js"></script>

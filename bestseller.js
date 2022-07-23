@@ -26,6 +26,7 @@ obj_bestseller=[
         price:"₹375",
         discount:"₹399",
     },
+    
 ]
 
 obj_bestseller.forEach(function(elem){
