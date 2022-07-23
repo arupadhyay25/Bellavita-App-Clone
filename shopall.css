@@ -4,20 +4,20 @@
     display: flex;
 }
 #categorys{
-    width: 15%;
+    width: 25%;
     height: auto;
 }
 #categorys>h1{
     margin-left: 10px;
     color: #475D4B;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 22px;
 }
 #categorys>ul{
-    margin-left: -30px;
+    margin-left: -20px;
     color: #475D4B;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 35px;
 }
 #categorys>ul>li:hover{
@@ -29,7 +29,7 @@
     width: 100%;
 }
 #gridshop{
-    width: 85%;
+    width: 75%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -55,7 +55,7 @@
 
 .tophead {
     display: flex;
-    gap: 280px;
+    gap: 400px;
     align-items: center;
     color: #475D4B;
     margin-top: -30px;
