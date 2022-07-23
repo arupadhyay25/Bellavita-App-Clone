@@ -1,8 +1,4 @@
-#bestseller{
-    text-align: center;
-    font-size: 22px;
-    color: #475D4B;
-}
+
 .bs{
     width: 80%;
     margin: auto;
@@ -12,6 +8,7 @@
     gap: 20px;
 }
 .bs>div{
+    padding: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .bs>div>img{
@@ -25,4 +22,102 @@
     font-size: 12px;
     border-radius: 10px;
     border: 0px;
+}
+.download{
+    margin-top: 10px;
+    width: 100%;
+    height: 498px;
+    background-color: rgb(229,240,218);
+    display: flex;
+    align-items: center;
+}
+.download>div{
+    width: 100%;
+    height: 100px;
+    background-color: #475D4B;
+    display: flex;
+    align-items: center;
+}
+#mobile{
+    width: 220px;
+    margin-left: 18%;
+    transition:transform .2s;
+}
+.download>div>div>h3{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(229,240,218);
+    margin-top: 120px;
+    margin-left: 100px;
+}
+#store{
+    margin-left: 120px;
+    width: 195px;
+    height: 75px;
+}
+#store2{
+    margin-left: 0px;
+    width: 195px;
+    height: 75px;
+}
+
+.download>div:hover #mobile{
+    transform:scale(1.09) ;
+}
+/* .contact */
+.contact{
+    width: 100%;
+    height: 423px;
+    background-color: rgb(241,247,236);
+    display: grid;
+    grid-template-columns: 164px 145px 120px 260px 210px;
+    gap: 0;
+    justify-content: center;
+}
+#chead{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(18,18,18);
+    border-bottom: 1px solid rgb(97, 235, 97);
+}
+#list{
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 29px;
+    font-weight: 400;
+}
+li{
+    display: flex;
+}
+
+li:hover{
+    color: rgb(97, 235, 97);
+}
+#input{
+    margin-top: 10px;
+    width: 91%;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+#subbtn{
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: #E5F0DA;
+    border: 0px;
+    background-color: #475D4B;
+    padding: 10px 20px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #475D4B;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.footer div{
+    margin-left: 45px;
+    color: white;
 }
