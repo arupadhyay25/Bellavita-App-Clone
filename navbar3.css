@@ -1,0 +1,31 @@
+/* .navbar3 */
+.navbar3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#list {  
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+  }
+  .navbar3>#list:after {    
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #list:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  #vertical{
+    height: 20px;
+    border-left: 1px solid #475D4B;
+  }
